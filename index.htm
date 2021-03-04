@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+<header class="conw">
+	<div class="topbox">
+    	<div class="top">Have an questions? <em>&nbsp;</em>123456789 &nbsp; <em class="email">&nbsp;</em>123456@gmail.com</div>
+    	<div class="l logo"><img src="images/logo.jpg"></div>
+        <div class="r top_r">
+            <ul class="menu">
+            	<li><a href="index.htm">Home</a></li>
+                <li><a href="#">Food Service Products</a></li>
+                <li><a href="#">Kitchenware</a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+	</div>
+</header>
+
+<div class="main conw">
+	<div class="banner">
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ><img src="images/banner1.jpg"></div>
+             <div class="swiper-slide" ><img src="images/banner2.jpg"></div>
+              <div class="swiper-slide" ><img src="images/banner3.jpg"></div>
+              
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination">分页</div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+    
+    <div class="banner_txt"><p>ncisdnvcijnvoevnhioehnruihfiocwjeiohfciwehnfvjerviojwepFOCKs<br>
+LKnvlzdhv;pcm.zvneoskvp;/sdmlknb.lizdjrovp</p>
+</div>
+
+	<div class="banner_txt_Bg">
+    	<p>
+       <strong> WE'RE HERE TO HELP</strong>
+We offer new and innovative packaging ideas, competitive <br>
+pricing, knowledgeable sales representatives and support staff.
+        </p>
+      <div class="c">
+      	<a href="">Quick View</a><a href="" class="on">more</a>
+      </div>  
+    </div>
+
+
+
+
+<div class="listbox"> 
+        <ul> 
+         <li> 
+          <div class="box">
+           <a href=""><img src="images/pro.jpg" class="img" /></a> 
+           <div class="name"> 
+            <b><a href="">this is products </a></b> 
+            <i><a href="" class="more">View More</a></i>
+           </div> 
+          </div> </li> 
+           <li> 
+          <div class="box">
+           <a href=""><img src="images/pro.jpg" class="img" /></a> 
+           <div class="name"> 
+            <b><a href="">this is products </a></b> 
+            <i><a href="" class="more">View More</a></i>
+           </div> 
+          </div> </li> 
+           <li> 
+          <div class="box">
+           <a href=""><img src="images/pro.jpg" class="img" /></a> 
+           <div class="name"> 
+            <b><a href="">this is products </a></b> 
+            <i><a href="" class="more">View More</a></i>
+           </div> 
+          </div> </li> 
+
+          
+        </ul> 
+ </div>
+ <hr>
+     
+<div class="brand">
+	<div class="bannertitle">Brands We Carry</div>
+    <table border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td><a href=""><img src="images/pro.jpg" /></a></td>
+    <td><a href=""><img src="images/pro.jpg" /></a><a href=""><img src="images/pro.jpg" /></a><a href=""><img src="images/pro.jpg" /></a><br>
+<a href=""><img src="images/pro.jpg" /></a><a href=""><img src="images/pro.jpg" /></a><a href=""><img src="images/pro.jpg" /></a></td>
+    <td><a href=""><img src="images/pro.jpg" /></a></td>
+  </tr>
+</table>
+
+</div>   
+
+
+
+<div class="foot"> 
+   <ul> 
+    <li><strong>Food Service Products</strong> We carry Bags, Boxes, Containers, Cups, Paper, Plates, Rolls, Cutlery, Chemicals, Eco-Friendly Products, Janitorial Supplies, Kitchenware and more. </li> 
+    <li> <strong>CMap Location</strong> <img src="images/foot.jpg" /> </li> 
+    <li><strong>Contact Info</strong> location: Beijing Provice Free phonenumber:123456789 Email:123456@gmail.com </li> 
+   </ul> 
+   <hr /> 
+   <p> this is the copyright </p> 
+</div>
+
+
+</div>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,//分页器的指示点可以控制
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,//间距
+		slidesPerView: 1,//显示个数
+		loop:true,//循环
+		autoplay : 2000,//自动切换
+		autoplayDisableOnInteraction : false,//手动滑动还能自动切换
+		//onlyExternal:true,//无法托运
+		hashnav: true,//有点像锚链接,并在每个slide处增加data-hash属性
+        hashnavWatchState: true//开启后当URL的锚链接发生变化时控制slide切换（hashnav也要在开启状态）。
+		
+    });
+
+
+$('.swiper-container').mouseenter(function() {
+swiper.stopAutoplay();
+}).mouseleave(function() {
+swiper.startAutoplay();
+})
+    </script>
+       
+</body>
+</html>
