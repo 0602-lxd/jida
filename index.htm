@@ -121,7 +121,30 @@ pricing, knowledgeable sales representatives and support staff.
 
 
 </div>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,//分页器的指示点可以控制
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,//间距
+		slidesPerView: 1,//显示个数
+		loop:true,//循环
+		autoplay : 2000,//自动切换
+		autoplayDisableOnInteraction : false,//手动滑动还能自动切换
+		//onlyExternal:true,//无法托运
+		hashnav: true,//有点像锚链接,并在每个slide处增加data-hash属性
+        hashnavWatchState: true//开启后当URL的锚链接发生变化时控制slide切换（hashnav也要在开启状态）。
+		
+    });
 
+
+$('.swiper-container').mouseenter(function() {
+swiper.stopAutoplay();
+}).mouseleave(function() {
+swiper.startAutoplay();
+})
+    </script>
        
 </body>
 </html>
